@@ -5,9 +5,9 @@ if ($connection->connect_error)
     die ( $connection->connect_error );
 
 //POST FROM LOGIN.PHP
-if(isset($_POST['Susername']) && isset($_POST['Spassword'])){
-    $un_temp = $_POST['Susername'];
-    $pw_temp = $_POST['Spassword'];
+if(isset($_POST['username']) && isset($_POST['password'])){
+    $un_temp = $_POST['username'];
+    $pw_temp = $_POST['password'];
 
 
     $query = "SELECT * FROM users WHERE username='$un_temp'"; //create query
