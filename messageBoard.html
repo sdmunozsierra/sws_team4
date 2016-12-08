@@ -16,14 +16,14 @@
         <ul>
           <li class="NavBar" onclick="document.location.href = 'index.html'" >Home</li>
           <li class="NavBar" style="padding-right: 36%;" onclick="document.location.href = 'messageBoard.html'">Message Board</li>
-		 <div id="signoutnav" hidden>
-         <li class="NavBar" onclick="document.location.href = 'profile.html'">Profile</li> 
-         <li class="NavBar" id="signoutbutton" onclick="">Sign Out</li>
-		</div>
+          <div id="signoutnav" hidden>
+            <li class="NavBar" onclick="document.location.href = 'profile.html'">Profile</li>
+            <li class="NavBar" id="signoutbutton" onclick="">Sign Out</li>
+          </div>
           <div id="signinnav">
-          <li class="NavBar" style="padding-right: 0px;" onclick="document.location.href = 'login.html'">Login</li>
-          <li class="NavBar" style="padding-left: 0px;" onclick="document.location.href = 'register.html'">Register</li>
-		  </div>
+            <li class="NavBar" style="padding-right: 0px;" onclick="document.location.href = 'login.html'">Login</li>
+            <li class="NavBar" style="padding-left: 0px;" onclick="document.location.href = 'register.html'">Register</li>
+          </div>
         </ul>
       </nav>
     </div>
@@ -31,20 +31,27 @@
   <section>
     <article class="article">
       <h3>Message Board</h3>
-      <div id="post_001">
-		  <label id="post_001_user" class="article" style="margin: 0px; padding: 0px;">User</label>
-		  <textarea id="post_001_text"  readonly style="resize: none; width: 800px; height: 300px; padding: 10px; margin-left: 10%;">asdasdasd2weaqsdqw</textarea> 
-	  </div>
-	  <div id="addNewPost">
-	  <form>
-	  <label>New Post</label>
-	  <br/>
-	  <br/>
-	  <textarea id="new_post_text" style="resize: none; width: 500px; height: 70px; margin-left: 10px;  overflow-y: visible" maxlength="250"></textarea>
-	  <br/>
-	  <input type="submit" value="Post">
-	  </form>
-	</div>
+      <div id="board">
+        <table width="100%" border="1"  cellpadding="2">
+          <tbody>
+            <tr>
+              <td width="12%" id="username">&nbsp;</td>
+              <td id="post">&nbsp;</td>
+              <td width="10%" id="edit_post">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="addNewPost">
+        <form>
+          <label>New Post</label>
+          <br/>
+          <br/>
+          <textarea id="new_post_text" style="resize: none; width: 500px; height: 70px; margin-left: 10px;  overflow-y: visible" maxlength="250"></textarea>
+          <br/>
+          <input type="submit" value="Post">
+        </form>
+      </div>
     </article>
   </section>
   <footer class="secondary_header footer">
