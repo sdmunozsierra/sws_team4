@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS Alumni</title>
+<link href="css/cs_alumni.css" rel="stylesheet" type="text/css">
+<script src="js/appParse.js" type="text/javascript" language="javascript" ></script>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <h1 class="title">CS Alumni Site</h1>
+    </div>
+    <div class="secondary_header" id="menu">
+      <nav style="display: inline;">
+        <ul>
+          <li class="NavBar" onclick="document.location.href = 'index.html'" >Home</li>
+          <li class="NavBar" style="padding-right: 36%;" onclick="document.location.href = 'messageBoard.html'">Message Board</li>
+          <li class="NavBar" style="padding-right: 0px;" onclick="document.location.href = 'login.html'">Login</li>
+          <li class="NavBar" style="padding-left: 0px;" onclick="document.location.href = 'register.html'">Register</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <article class="article">
+      <h3>Register a New Account</h3>
+      <form>
+      <label>First Name:&nbsp;</label>
+      <input type="text">
+      <br/>
+      <label>Last Name:&nbsp;</label>
+      <input type="text">
+      <br/>
+      <label>Username:&nbsp;</label>
+      <input type="text">
+      <br/>
+      <label>Password:&nbsp;&nbsp;</label>
+      <input type="password">
+      <br/>
+      <br/>
+      <input type="submit" value="Register">
+      </form>
+    </article>
+  </section>
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2016 - <strong>UTEP CS Department</strong></div>
+  </footer>
+</div>
+</body>
+</html>
